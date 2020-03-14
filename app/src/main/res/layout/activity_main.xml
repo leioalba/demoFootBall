@@ -1,78 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@drawable/sea">
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:orientation="vertical"
-        android:paddingTop="20dp">
+        android:layout_height="30dp"
+        android:orientation="horizontal">
+
         <TextView
-            android:layout_width="200dp"
-            android:layout_height="100dp"
-            android:text="用户注册"
-            android:textSize="36dp"
-            android:layout_gravity="center_horizontal"/>
+            android:id="@+id/tv_England"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="英超"
+            android:gravity="center"
+            />
+        <TextView
+            android:id="@+id/tv_Spain"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="西甲"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/tv_Germany"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="德甲"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/tv_Italy"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="意甲"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/tv_Franch"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="法甲"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/tv_video"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="视频"
+            android:gravity="center"/>
     </LinearLayout>
-    <LinearLayout
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="100dp"
-                android:layout_height="50dp"
-                android:layout_marginLeft="20dp"
-                android:gravity="right"
-                android:text="账号：" />
-
-            <EditText
-                android:id="@+id/ed_name"
-                android:layout_width="200dp"
-                android:layout_height="50dp"
-                tools:text="请输入账号" />
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="100dp"
-                android:layout_height="50dp"
-                android:layout_marginLeft="20dp"
-                android:gravity="right"
-                android:text="密码：" />
-
-            <EditText
-                android:id="@+id/ed_psw"
-                android:layout_width="200dp"
-                android:layout_height="50dp"
-                tools:text="请输入密码" />
-        </LinearLayout>
-        <Button
-            android:id="@+id/btn_login"
-            android:layout_width="100dp"
-            android:layout_height="50dp"
-            android:text="登录"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="20dp"/>
-        <Button
-            android:id="@+id/btn_login_register"
-            android:layout_width="200dp"
-            android:layout_height="50dp"
-            android:text="未有账户，前往注册"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="30dp"/>
-    </LinearLayout>
-
+        android:layout_height="0dp"
+        android:layout_weight="1"></android.support.v4.view.ViewPager>
 </LinearLayout>
