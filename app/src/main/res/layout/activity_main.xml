@@ -6,58 +6,70 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:contentInsetStart="0dp"
+            app:titleTextColor="@color/colorWhite"
+            android:background="@color/colorPrimary"></android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="30dp"
         android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/tv_England"
+            android:id="@+id/tv_jifen"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="英超"
+            android:text="积分榜"
             android:gravity="center"
-            />
+            android:textSize="20sp"
+            android:background="@drawable/border"/>
         <TextView
-            android:id="@+id/tv_Spain"
+            android:id="@+id/tv_tongji"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="西甲"
-            android:gravity="center"/>
+            android:text="球员榜"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:background="@drawable/border"/>
         <TextView
-            android:id="@+id/tv_Germany"
+            android:id="@+id/tv_days"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="德甲"
-            android:gravity="center"/>
-        <TextView
-            android:id="@+id/tv_Italy"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="意甲"
-            android:gravity="center"/>
-        <TextView
-            android:id="@+id/tv_Franch"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="法甲"
-            android:gravity="center"/>
+            android:text="赛程"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:background="@drawable/border"/>
         <TextView
             android:id="@+id/tv_video"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="视频"
-            android:gravity="center"/>
+            android:gravity="center"
+            android:textSize="20sp"
+            android:background="@drawable/border"/>
     </LinearLayout>
-    <android.support.v4.view.ViewPager
-        android:id="@+id/viewPager"
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/refresh"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"></android.support.v4.view.ViewPager>
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></ListView>
+    </android.support.v4.widget.SwipeRefreshLayout>
 </LinearLayout>
