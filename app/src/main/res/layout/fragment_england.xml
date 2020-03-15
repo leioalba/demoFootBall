@@ -6,12 +6,13 @@
     tools:context=".Fragment.EnglandFragment">
 
     <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
-
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="30dp"
@@ -1232,7 +1233,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="19"
+                android:text="20"
                 android:gravity="center"/>
             <TextView
                 android:layout_width="0dp"
@@ -1278,4 +1279,5 @@
                 android:gravity="center"/>
         </LinearLayout>
     </LinearLayout>
+    </ScrollView>
 </FrameLayout>
