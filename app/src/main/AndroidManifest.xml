@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.administrator.demo22">
 
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -27,7 +28,12 @@
         <activity android:name=".PlayerActivity" />
         <activity android:name=".DaysActivity" />
         <activity android:name=".VideoActivity" />
-        <activity android:name=".ContentActivity"></activity>
+        <activity android:name=".ContentActivity" />
+        <activity android:name=".Video1Activity" />
+        <activity android:name=".Video2Activity" />
+        <activity android:name=".Video3Activity" />
+        <activity android:name=".Video4Activity" />
+        <activity android:name=".Video5Activity"></activity>
     </application>
 
 </manifest>

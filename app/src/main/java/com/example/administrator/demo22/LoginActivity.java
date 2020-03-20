@@ -67,7 +67,7 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
     }
-
+    //读取刚刚储存的用户名与密码
     private String readPsw(String userName) {
         SharedPreferences sp = getSharedPreferences("loginInfo", MODE_PRIVATE);
         return sp.getString(userName, "");

@@ -73,6 +73,7 @@ public class RegisterActivity extends AppCompatActivity {
         }
         return has_userName;
     }
+    //使用md5进行加密，储存用户名与密码
     private void saveRegisterInfo(String userName,String psw){
         String md5Psw = (psw);
         SharedPreferences sp=getSharedPreferences("loginInfo", MODE_PRIVATE);

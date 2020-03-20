@@ -1,9 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".VideoActivity">
+    android:orientation="vertical">
 
-</android.support.constraint.ConstraintLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="中场大师！皮尔洛尤文时期精彩集锦"/>
+        <ImageButton
+            android:id="@+id/ib_v1"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/play"
+            android:background="@drawable/laopi"/>
+    </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="经典回顾！05年欧冠半决赛利物浦淘汰切尔西"/>
+                <ImageButton
+                    android:id="@+id/ib_v2"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/play"
+                    android:background="@drawable/che"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="威武大将军！范佩西2011/12赛季37球全记录"/>
+                <ImageButton
+                    android:id="@+id/ib_v3"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/play"
+                    android:background="@drawable/van"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="血性队长！普约尔巴萨生涯精彩集锦"/>
+                <ImageButton
+                    android:id="@+id/ib_v4"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/play"
+                    android:background="@drawable/puyol"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="手术刀般传球！巅峰哈维+伊涅斯塔20大无解助攻"/>
+                <ImageButton
+                    android:id="@+id/ib_v5"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/play"
+                    android:background="@drawable/xavi"/>
+            </LinearLayout>
+        </LinearLayout>
+</ScrollView>
+</LinearLayout>
